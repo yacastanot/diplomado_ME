@@ -5,48 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Página en GitHub Pages</title>
   <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
   <!-- Barra de navegación -->
   <header>
     <nav class="navbar">
-      <div class="logo">Mi Sitio</div>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <div class="logo"><i class="fas fa-graduation-cap"></i> Mi Sitio</div>
+      <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#tematicas">Temáticas</a></li>
-        <li><a href="#ejercicios">Ejercicios</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="#tematicas"><i class="fas fa-book"></i> Temáticas</a></li>
+        <li><a href="#ejercicios"><i class="fas fa-laptop-code"></i> Ejercicios</a></li>
+        <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Secciones -->
   <section id="inicio" class="section hero">
-    <h1>Bienvenido 🚀</h1>
-    <p>Esta es mi primera página publicada en GitHub Pages</p>
+    <h1><i class="fas fa-rocket"></i> Bienvenido</h1>
+    <p>Esta es mi primera página publicada en GitHub Pages 🚀</p>
+    <a href="#tematicas" class="btn"><i class="fas fa-arrow-down"></i> Ver más</a>
   </section>
 
   <section id="tematicas" class="section alt">
-    <h2>Temáticas</h2>
+    <h2><i class="fas fa-book-open"></i> Temáticas</h2>
     <p>Aquí van los temas del curso o diplomado.</p>
+    <div class="card-container">
+      <div class="card">
+        <i class="fas fa-database fa-2x"></i>
+        <h3>Datos</h3>
+        <p>Conceptos básicos de bases de datos.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-brain fa-2x"></i>
+        <h3>Inteligencia Artificial</h3>
+        <p>Introducción a machine learning y deep learning.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-cloud fa-2x"></i>
+        <h3>Cloud</h3>
+        <p>Uso de servicios en la nube para proyectos.</p>
+      </div>
+    </div>
   </section>
 
   <section id="ejercicios" class="section">
-    <h2>Ejercicios</h2>
-    <p>Lista de ejercicios con enlaces a Google Colab u otros recursos.</p>
+    <h2><i class="fas fa-code"></i> Ejercicios</h2>
+    <p>Accede a los ejercicios prácticos:</p>
+    <div class="btn-group">
+      <a href="https://colab.research.google.com/" target="_blank" class="btn">
+        <i class="fab fa-google"></i> Google Colab
+      </a>
+      <a href="ejemplo.pdf" target="_blank" class="btn">
+        <i class="fas fa-file-pdf"></i> Descargar PDF
+      </a>
+      <a href="https://github.com/" target="_blank" class="btn">
+        <i class="fab fa-github"></i> Ver en GitHub
+      </a>
+    </div>
   </section>
 
   <section id="contacto" class="section alt">
-    <h2>Contacto</h2>
+    <h2><i class="fas fa-envelope-open-text"></i> Contacto</h2>
     <p>Puedes escribirme a: 
-      <a href="mailto:tuemail@correo.com">tuemail@correo.com</a>
+      <a href="mailto:tuemail@correo.com"><i class="fas fa-paper-plane"></i> tuemail@correo.com</a>
     </p>
+    <div class="socials">
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Mi Página en GitHub Pages</p>
+    <p>© 2025 Mi Página en GitHub Pages | Hecha con <i class="fas fa-heart"></i></p>
   </footer>
 
   <script src="script.js"></script>
