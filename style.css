@@ -168,4 +168,21 @@ html {
   .nav-links.active {
     display: flex;
   }
+  /* Lista de habilidades en la primera sección */
+.skills {
+  list-style: none;
+  margin-top: 20px;
+  text-align: left;
+  max-width: 600px;
+}
+
+.skills li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.skills i {
+  color: #00e676;
+  margin-right: 8px;
+}
 }
