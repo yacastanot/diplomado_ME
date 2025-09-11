@@ -1,48 +1,171 @@
-/* Fondo en la sección de inicio */
-#inicio {
-  background: url("logo_universidad_central.png") no-repeat center center;
-  background-size: contain; /* si quieres que se repita menos, puedes usar 'cover' */
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-}
-
-#inicio .overlay {
-  background: rgba(255, 255, 255, 0.85); /* capa translúcida para que el texto se lea */
-  padding: 40px;
-  border-radius: 15px;
-  max-width: 800px;
-  margin: auto;
-}
-
-#inicio h1 {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-}
-
-#inicio p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-/* Lista de habilidades */
-.skills {
-  list-style: none;
+/* Reset */
+* {
+  margin: 0;
   padding: 0;
-  text-align: left;
-  margin: 0 auto;
-  max-width: 500px;
+  box-sizing: border-box;
 }
 
-.skills li {
-  margin: 10px 0;
-  font-size: 1.1rem;
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
 }
 
-.skills i {
-  color: #00e676;
-  margin-right: 8px;
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #2c3e50;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* Menú móvil */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Secciones */
+.section {
+  height: 100vh;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(135deg, #00bcd4, #3f51b5);
+  color: white;
+}
+
+.alt {
+  background: #f4f4f4;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #00bcd4;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0288d1;
+}
+
+.btn-group {
+  margin-top: 20px;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card i {
+  margin-bottom: 10px;
+  color: #3f51b5;
+}
+
+/* Redes sociales */
+.socials a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.socials a:hover {
+  color: #00bcd4;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #34495e;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
 }
