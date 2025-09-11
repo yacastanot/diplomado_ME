@@ -1,2 +1,7 @@
-// Aquí puedes agregar interactividad extra (opcional)
-console.log("Página cargada correctamente 🚀");
+// Toggle menú en móvil
+const toggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+toggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
