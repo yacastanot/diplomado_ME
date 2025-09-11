@@ -169,3 +169,47 @@ html {
     display: flex;
   }
 }
+/* Hero con dos columnas */
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.hero-text {
+  flex: 1 1 50%;
+  min-width: 300px;
+}
+
+.hero-image {
+  flex: 1 1 40%;
+  min-width: 250px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Lista de habilidades */
+.skills {
+  list-style: none;
+  margin-top: 20px;
+  text-align: left;
+  max-width: 600px;
+}
+
+.skills li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.skills i {
+  color: #00e676;
+  margin-right: 8px;
+}
