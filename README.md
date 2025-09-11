@@ -1,2 +1,2 @@
 # yacastanot.github.io
-Pagina de curso Métodos Estadísticos para el Análisis de Datos
+Pagina del Diplomado: Métodos Estadísticos para el Análisis de Datos.
