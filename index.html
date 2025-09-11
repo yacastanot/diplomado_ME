@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página en GitHub Pages</title>
+  <title>Diplomado - Métodos Estadísticos</title>
   <link rel="stylesheet" href="style.css">
   <!-- FontAwesome para íconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -13,7 +13,7 @@
   <!-- Barra de navegación -->
   <header>
     <nav class="navbar">
-      <div class="logo"><i class="fas fa-graduation-cap"></i> Mi Sitio</div>
+      <div class="logo"><i class="fas fa-graduation-cap"></i> Diplomado</div>
       <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
       <ul class="nav-links" id="nav-links">
         <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
@@ -24,13 +24,33 @@
     </nav>
   </header>
 
-  <!-- Secciones -->
+  <!-- Primera sección -->
   <section id="inicio" class="section hero">
-    <h1><i class="fas fa-rocket"></i> Bienvenido</h1>
-    <p>Esta es mi primera página publicada en GitHub Pages 🚀</p>
-    <a href="#tematicas" class="btn"><i class="fas fa-arrow-down"></i> Ver más</a>
+    <div class="hero-container">
+      <!-- Texto -->
+      <div class="hero-text">
+        <h1><i class="fas fa-chart-line"></i> Métodos Estadísticos para el Análisis de Datos</h1>
+        <p>
+          El diplomado le brindará las herramientas básicas para procesar y analizar datos 
+          y apoyar la toma de decisiones en la organización.
+        </p>
+
+        <h3><i class="fas fa-lightbulb"></i> Habilidades que desarrollarás:</h3>
+        <ul class="skills">
+          <li><i class="fas fa-check-circle"></i> Manejo de herramientas para procesar y analizar datos.</li>
+          <li><i class="fas fa-check-circle"></i> Manejo de herramientas computacionales <strong>Python</strong> para procesar y analizar datos.</li>
+          <li><i class="fas fa-check-circle"></i> Soporte a la toma de decisiones.</li>
+        </ul>
+      </div>
+
+      <!-- Imagen -->
+      <div class="hero-image">
+        <img src="https://cdn-icons-png.flaticon.com/512/4149/4149670.png" alt="Ilustración de análisis de datos">
+      </div>
+    </div>
   </section>
 
+  <!-- Resto de secciones -->
   <section id="tematicas" class="section alt">
     <h2><i class="fas fa-book-open"></i> Temáticas</h2>
     <p>Aquí van los temas del curso o diplomado.</p>
@@ -82,7 +102,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Mi Página en GitHub Pages | Hecha con <i class="fas fa-heart"></i></p>
+    <p>© 2025 Diplomado | Hecho con <i class="fas fa-heart"></i></p>
   </footer>
 
   <script src="script.js"></script>
