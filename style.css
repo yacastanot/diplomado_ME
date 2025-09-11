@@ -1,51 +1,31 @@
-/* Fondo verde institucional + marca de agua */
+/* Fondo en la sección de inicio */
 #inicio {
-  background-color: #4A6B38; /* verde institucional */
+  background: url("logo_universidad_central.png") no-repeat center center;
+  background-size: contain; /* si quieres que se repita menos, puedes usar 'cover' */
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
-  overflow: hidden;
-  color: #ffffff; /* texto en blanco para contraste */
 }
 
-/* Logo como marca de agua */
-#inicio::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 80%;
-  height: 80%;
-  background: url("logo_universidad_central.png") no-repeat center center;
-  background-size: contain;
-  opacity: 0.1; /* nivel de transparencia de la marca de agua */
-  transform: translate(-50%, -50%);
-  z-index: 0;
-}
-
-/* Contenido encima de la marca de agua */
 #inicio .overlay {
-  position: relative;
-  background: rgba(0, 0, 0, 0.5); /* caja translúcida oscura */
+  background: rgba(255, 255, 255, 0.85); /* capa translúcida para que el texto se lea */
   padding: 40px;
   border-radius: 15px;
   max-width: 800px;
-  z-index: 1;
+  margin: auto;
 }
 
 #inicio h1 {
   font-size: 2.2rem;
   margin-bottom: 15px;
-  color: #ffffff;
 }
 
-#inicio p, 
-#inicio h3, 
-#inicio li {
-  color: #f0f0f0;
+#inicio p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 /* Lista de habilidades */
