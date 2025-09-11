@@ -3,28 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página con GitHub Pages</title>
+  <title>Mi Página en GitHub Pages</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Barra de navegación -->
-  <nav class="navbar">
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#tematicas">Temáticas</a></li>
-      <li><a href="#ejercicios">Ejercicios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Mi Sitio</div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tematicas">Temáticas</a></li>
+        <li><a href="#ejercicios">Ejercicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Secciones -->
-  <section id="inicio" class="section">
-    <h1>Bienvenido</h1>
-    <p>Esta es mi primera página en GitHub Pages 🚀</p>
+  <section id="inicio" class="section hero">
+    <h1>Bienvenido 🚀</h1>
+    <p>Esta es mi primera página publicada en GitHub Pages</p>
   </section>
 
-  <section id="tematicas" class="section">
+  <section id="tematicas" class="section alt">
     <h2>Temáticas</h2>
     <p>Aquí van los temas del curso o diplomado.</p>
   </section>
@@ -34,10 +38,16 @@
     <p>Lista de ejercicios con enlaces a Google Colab u otros recursos.</p>
   </section>
 
-  <section id="contacto" class="section">
+  <section id="contacto" class="section alt">
     <h2>Contacto</h2>
-    <p>Puedes escribirme a: <a href="mailto:tuemail@correo.com">tuemail@correo.com</a></p>
+    <p>Puedes escribirme a: 
+      <a href="mailto:tuemail@correo.com">tuemail@correo.com</a>
+    </p>
   </section>
+
+  <footer>
+    <p>© 2025 Mi Página en GitHub Pages</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
